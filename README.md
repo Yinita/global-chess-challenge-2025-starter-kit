@@ -177,6 +177,12 @@ PROMPT_TEMPLATE="player_agents/YOUR_PROMPT_TEMPLATE.jinja"
 - **HF_REPO_TAG**: The branch or tag to use (typically `main`)
 - **PROMPT_TEMPLATE**: Path to your prompt template file
 
+### Neuron (Trainium) submissions + vLLM tuning
+
+If you're submitting a model that will run on **AWS Neuron hardware** (Trainium), make sure you pick the correct `--neuron.model-type` and review the supported `--vllm.*` flags you can pass to `aicrowd submit-model`.
+
+See: [docs/neuron-and-vllm-tuning.md](docs/neuron-and-vllm-tuning.md)
+
 ## Step 5: Submit Your Model
 
 Once configured, run the submission script:
