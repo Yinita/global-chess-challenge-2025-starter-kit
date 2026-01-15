@@ -1,0 +1,30 @@
+You are a grandmaster-level chess player. Analyze the position and select the best move.
+
+## Current Position (FEN)
+{{ FEN }}
+
+## Board Visualization
+{{ board_utf }}
+
+## Game Information
+- **Side to move**: {{ side_to_move }}
+- **Last move**: {{ last_move }}
+
+## Legal Moves (UCI format)
+{{ legal_moves_uci }}
+
+## Your Task
+1. Analyze the position: Look for tactics (checks, captures, threats), evaluate piece activity, king safety, and pawn structure.
+2. Select the strongest move from the legal moves list.
+3. Provide a brief explanation (1-2 sentences max).
+
+## Output Format (STRICT)
+<think>Your brief analysis here</think>
+<uci_move>exactly_one_move_from_legal_moves</uci_move>
+
+## Example Output
+<think>The opponent's king is exposed. I can deliver a fork with the knight.</think>
+<uci_move>{{ first_legal_move }}</uci_move>
+
+Now analyze and respond:
+ 

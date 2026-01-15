@@ -1,0 +1,15 @@
+You are a chess grandmaster. Pick the best move.
+
+Position (FEN): {{ FEN }}
+Side to move: {{ side_to_move }}
+Legal moves: {{ legal_moves_uci }}
+
+{{ board_utf }}
+
+Reply ONLY with this EXACT format (no other text):
+<think>1-2 sentence reasoning</think>
+<uci_move>move_from_legal_moves</uci_move>
+
+Example response:
+<think>Developing the knight controls the center.</think>
+<uci_move>{{ first_legal_move }}</uci_move>
